@@ -137,6 +137,12 @@ android {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     implementation project(':cmbsdk-react-native')
     implementation project(':react-native-device-info')
