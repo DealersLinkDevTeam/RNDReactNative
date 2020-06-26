@@ -1,8 +1,10 @@
-# ReduxBoilerPlate
+# RNDReactNative
+
+RND tests and experiments
 
 ## Palette
 
-https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=EF6C00&secondary.color=00E676
+<img src="screenshots/color-palette.jped" height="400" alt="Color palette"/>
 
 ## Stack
 
