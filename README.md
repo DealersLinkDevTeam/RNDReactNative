@@ -4,7 +4,7 @@ RND tests and experiments
 
 ## Palette
 
-<img src="screenshots/color-palette.jpeg" height="200" alt="Color palette"/>
+<img src="screenshots/color-palette.jpeg" height="200" alt="Color Palette"/>
 
 ## Stack
 
