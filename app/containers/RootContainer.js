@@ -1,19 +1,16 @@
 import React, {Component} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {View} from 'react-native';
+import {applicationStyles} from '../themes';
 
 import {getStorybookUI, configure} from '@storybook/react-native';
 
 import Navigation from '../navigation/AppNavigation';
 
 const RootContainer = () => (
-  <View style={styles.container}>
+  <View style={applicationStyles.screen.mainContainer}>
     <Navigation />
   </View>
 );
-
-const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: '#EAEDED'},
-});
 
 /**
  * Setup Storybook. It would probably be a fantastic idea to not do this when not in dev.

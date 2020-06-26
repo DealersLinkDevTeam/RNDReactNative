@@ -1,10 +1,17 @@
-import React from 'react';
-import {Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {Text, TextInput, View} from 'react-native';
+import {Input} from 'react-native-elements';
+import styles from './styles';
 
-const LicenseForm = ({params}) => (
-  <View>
-    <Text>LicenseForm</Text>
-  </View>
-);
+const LicenseForm = ({params}) => {
+  return (
+    <View style={styles.container}>
+      <Input
+        placeholder="INPUT WITH ICON"
+        leftIcon={{type: 'font-awesome', name: 'chevron-left'}}
+      />
+    </View>
+  );
+};
 
 export default LicenseForm;

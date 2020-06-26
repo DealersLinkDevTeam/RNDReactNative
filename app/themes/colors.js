@@ -4,16 +4,16 @@
  */
 const white = '#FFF';
 const black = '#000';
-
-const greyColors = {
-  light: '#E5E7E9',
-  main: '#ABB2B9',
-  dark: '#808B96',
-};
+const transparent = 'rgba(0,0,0,0)';
+const opaque = 'rgba(255,255,255, 0.75)';
+const tint = 'rgba(0, 0, 0, 0.4)';
 
 const colors = {
   black,
   white,
+  transparent,
+  opaque,
+  tint,
   primary: {
     contrastText: black,
     light: '#E5E7E9',
@@ -25,13 +25,12 @@ const colors = {
     dark: '#B53D00',
     main: '#EF6C00',
     light: '#FF9D3F',
-  //   dark: '#00B248',
-  //   main: '#00E676',
-  //   light: '#66FFA6',
-  // },
+  },
   success: {
     contrastText: white,
-    main: '#00d660',
+    dark: '#00B248',
+    main: '#00E676',
+    light: '#66FFA6',
   },
   info: {
     contrastText: white,

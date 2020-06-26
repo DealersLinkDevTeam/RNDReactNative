@@ -5,11 +5,11 @@ import colors from './colors';
 // This file is for a reusable grouping of Theme items.
 // Similar to an XML fragment layout in Android
 
-const ApplicationStyles = {
+const applicationStyles = {
   screen: {
     mainContainer: {
       flex: 1,
-      backgroundColor: Colors.transparent,
+      backgroundColor: colors.transparent,
     },
     backgroundImage: {
       position: 'absolute',
@@ -21,7 +21,7 @@ const ApplicationStyles = {
     container: {
       flex: 1,
       paddingTop: metrics.baseMargin,
-      backgroundColor: Colors.transparent,
+      backgroundColor: colors.transparent,
     },
     section: {
       margin: metrics.section,
@@ -30,12 +30,12 @@ const ApplicationStyles = {
     sectionText: {
       ...fonts.style.normal,
       paddingVertical: metrics.doubleBaseMargin,
-      color: Colors.snow,
+      color: colors.snow,
       marginVertical: metrics.smallMargin,
       textAlign: 'center',
     },
     subtitle: {
-      color: Colors.snow,
+      color: colors.snow,
       padding: metrics.smallMargin,
       marginBottom: metrics.smallMargin,
       marginHorizontal: metrics.smallMargin,
@@ -43,19 +43,19 @@ const ApplicationStyles = {
     titleText: {
       ...fonts.style.h2,
       fontsize: 14,
-      color: Colors.text,
+      color: colors.text,
     },
   },
   darkLabelContainer: {
     padding: metrics.smallMargin,
     paddingBottom: metrics.doubleBaseMargin,
-    borderBottomColor: Colors.border,
+    borderBottomColor: colors.border,
     borderBottomWidth: 1,
     marginBottom: metrics.baseMargin,
   },
   darkLabel: {
     fontFamily: fonts.type.bold,
-    color: Colors.snow,
+    color: colors.snow,
   },
   groupContainer: {
     margin: metrics.smallMargin,
@@ -65,16 +65,16 @@ const ApplicationStyles = {
   },
   sectionTitle: {
     ...fonts.style.h4,
-    color: Colors.coal,
-    backgroundColor: Colors.ricePaper,
+    color: colors.coal,
+    backgroundColor: colors.ricePaper,
     padding: metrics.smallMargin,
     marginTop: metrics.smallMargin,
     marginHorizontal: metrics.baseMargin,
     borderWidth: 1,
-    borderColor: Colors.ember,
+    borderColor: colors.ember,
     alignItems: 'center',
     textAlign: 'center',
   },
 };
 
-export default ApplicationStyles;
+export default applicationStyles;
