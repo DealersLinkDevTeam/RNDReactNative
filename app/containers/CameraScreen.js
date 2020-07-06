@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {
   View,
   StyleSheet,
+  // StatusBar,
   Text,
   TouchableOpacity,
   Image,
@@ -9,6 +10,7 @@ import {
   ImageBackground,
 } from 'react-native';
 import {images, colors} from '../themes';
+import StatusBar from '../components/FocusAwareStatusBar/StatusBar';
 
 const windowWidth = Dimensions.get('window').width;
 console.log('windowWidth', windowWidth);
@@ -22,6 +24,7 @@ class CameraScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar barStyle="light-content" backgroundColor="#6a51ae" />
         {/* Menu Component */}
         <View style={styles.menu}>
           <Text style={styles.menuText}>Library</Text>

@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 
 import {CardList} from '../components/Lists';
 import {SimpleCard} from '../components/Cards';
 import {FloatingView} from '../components/UtilityViews';
+import StatusBar from '../components/FocusAwareStatusBar/StatusBar';
 
 class HomeScreen extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class HomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar barStyle="dark-content" backgroundColor="#ecf0f1" />
         <View style={styles.section}>
           <FloatingView>
             <SimpleCard />
