@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Text, TextInput, View} from 'react-native';
 import {Input} from 'react-native-elements';
-import styles from './styles';
+import styles from './Styles';
 import TextInputMask from 'react-native-text-input-mask';
 
 const LicenseForm = ({params}) => {

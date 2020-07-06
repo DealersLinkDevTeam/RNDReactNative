@@ -4,11 +4,12 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import SettingsScreen from '../containers/SettingsScreen';
+import Loading from '../containers/Loading';
 import SignInScreen from '../containers/SignInScreen';
 import SignUpScreen from '../containers/SignUpScreen';
 import HomeScreen from '../containers/HomeScreen';
-import Loading from '../containers/Loading';
+import CameraScreen from '../containers/CameraScreen';
+import SettingsScreen from '../containers/SettingsScreen';
 
 const AppTabs = createBottomTabNavigator();
 const AppTabsScreen = () => (
@@ -19,6 +20,15 @@ const AppTabsScreen = () => (
       options={{
         tabBarIcon: (props) => (
           <Ionicons name="ios-list" size={props.size} color={props.color} />
+        ),
+      }}
+    />
+    <AppTabs.Screen
+      name="Camera"
+      component={CameraScreen}
+      options={{
+        tabBarIcon: (props) => (
+          <Ionicons name="camera" size={props.size} color={props.color} />
         ),
       }}
     />
