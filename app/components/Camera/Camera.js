@@ -2,7 +2,7 @@ import React from 'react';
 import {RNCamera} from 'react-native-camera';
 import styles from './Styles';
 
-const Camera = ({...rest}) => (
+const Camera = ({children}) => (
   <RNCamera
     ref={(ref) => {
       this.camera = ref;
@@ -24,8 +24,9 @@ const Camera = ({...rest}) => (
     }}
     onGoogleVisionBarcodesDetected={({barcodes}) => {
       console.log(barcodes);
-    }}
-  />
+    }}>
+    {children}
+  </RNCamera>
 );
 
 export default Camera;

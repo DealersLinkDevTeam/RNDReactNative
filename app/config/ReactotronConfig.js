@@ -6,7 +6,7 @@ console.disableYellowBox = true;
 // First, set some configuration settings on how to connect to the app
 Reactotron.setAsyncStorageHandler(AsyncStorage);
 Reactotron.configure({
-  name: 'Demo App',
+  name: 'RND',
   // host: '10.0.1.1',
   // port: 9091
 });

@@ -11,6 +11,8 @@ import {
 } from 'react-native';
 import {images, colors} from '../themes';
 import StatusBar from '../components/FocusAwareStatusBar/StatusBar';
+import Camera from '../components/Camera/Camera';
+import {BarcodeMask} from '@nartc/react-native-barcode-mask';
 
 const windowWidth = Dimensions.get('window').width;
 console.log('windowWidth', windowWidth);
@@ -25,12 +27,10 @@ class CameraScreen extends Component {
     return (
       <View style={styles.container}>
         <StatusBar barStyle="light-content" backgroundColor="#6a51ae" />
-        {/* Menu Component */}
         <View style={styles.menu}>
           <Text style={styles.menuText}>Library</Text>
         </View>
         <View style={styles.centeredContent}>
-          {/* Button Component */}
           <TouchableOpacity style={styles.button}>
             <ImageBackground source={images.ripple} style={styles.image}>
               <Text style={styles.buttonText}>TAKE PHOTO</Text>
